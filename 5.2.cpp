@@ -1,37 +1,22 @@
 #include <iostream>
-
 using namespace std;
-
-void Sort(int massive[])
+int main ( )
 {
-  for (int i=0; i<10-1; i++)
-  {
-    for (int k=i+1; k<10; k++)
-    {
-      if (massive[i]<massive[k])
-      {
-        int a=massive[k];
-        massive[k]=massive[i];
-        massive[i]=a;
-      }
-    }
-  }
-}
-
-int main()
-{
-  int massive[10];
-  cout<<"Введите массив из 10 чисел"<<'\n';
-  for (int i=0; i<10; i++)
-  {
-    cout<<" ";
-    cin>>massive[i];
-  }
-  Sort(massive);
-  for (int k=0; k<10; k++)
-  {
-    cout<<massive[k]<<' ';
-  }
-  cout<<'\n';
-  return 0;
+	int n= 11, i , b, j;
+	float y [ n ];
+	for ( i =0; i<n; i++) 
+	{
+		cout<<"  \n Y [ "<<i<<" ]= ",;
+		cin>>y [ i ];
+	}
+	for ( j =1; j<n; j++) //Упорядочивание элементов в массиве по убыванию их значений.
+		for ( i =0; i<n-j; i++)
+		if ( y [ i ]<y [ i +1 ]) //Если текущий элемент меньше следующего
+		{
+			b=y [ i ]; 
+			y [ i ]=y [ i + 1 ]; //Заменить текущий элемент следующим
+			y [ i +1]=b; //Заменить следующий элемент на сохранённый в b
+		}
+	for ( i =0; i<n; i++) cout<<y [ i ]<<" \n "; 
+	return 0;
 }
