@@ -1,18 +1,21 @@
-#include <iostream>
 #include <fstream>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
-int main()
-{
-int n=1, b;
-ifstream file("f");
-for (n;n>0;n++)
-{
-file»b;
-cout«n«". "«b«"\n";
-if (file.eof()) break;
+int main () {
+string line;
+int i;
+
+ifstream file ("solbon");
+
+if (file.is_open()) {
+i = 0;
+while ( getline (file, line) ) {
+cout << ++i << ". ";
+cout << line << '\n';
 }
 file.close();
-return 0;
+}
 }
