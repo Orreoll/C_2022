@@ -1,15 +1,14 @@
-#include <iostream>
-
+#include <stdio.h>
 using namespace std;
-
 int main()
 {
-int i;
-for (i; i<101; i++)
-{
-if (i%3==0) {
-cout«i « "\n";
-}
-}
-return 0;
+    int a = 0;
+    do {
+        if (a%3==0) {
+        printf("A = : %d\n",a);
+        }
+        a++;
+    }
+    while (a<101);
+    return 0;
 }
