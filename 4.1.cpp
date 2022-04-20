@@ -1,16 +1,12 @@
 #include <iostream>
-#include <string>
-
 using namespace std;
-
-int main()
+int main ( )
 {
-int s;
-string b[10]={
+	int x;
+	cout<<" \n x = "; cin>>x; 
+	string b[10]={
 "ноль", "один","два","три","четыре","пять","шесть","семь","восемь","девять"
 };
-cout«"input num"«"\n";
-cin»s;
-cout«b[s];
-return 0;
+    cout<<b[x];
+	return 0;
 }
