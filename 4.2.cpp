@@ -1,22 +1,23 @@
 #include <iostream>
 #include <cstring>
-
 using namespace std;
 
 int main()
 {
-    int a, i=0, *ip;
-    char x[80];
-    cout << "Ввод символов" << "\n";
-    cin >> x;
-    cout<<"Результат - ";
-    a = strlen(x);
-    while (1){
-        ip=(int *) &x[i];
-        (*ip)++;
-        cout<<x[i];
-        if(a==i) break;
-        i++;
-    }
-    return 0;
+char solbon[30];
+cin >> solbon;
+int a = 0;
+while (a < strlen (solbon))
+{
+int ascii = (int)solbon[a];
+if (ascii == 77)
+{
+ascii = (int)solbon[a] - 15; //для буквы z->a
+}
+else ascii = (int)solbon[a] + 1;
+cout << (char)ascii;
+++a;
+}
+char c;
+return 0;
 }
