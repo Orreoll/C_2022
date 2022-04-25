@@ -6,11 +6,15 @@ int main ( )
 {
 	int a, b; 
 	ofstream f; 
-	f.open ( " solbon " );
+	f.open ("solbon");
 	cout<<" b = "; cin>>b;
 	cout<<" a = "; cin>>a;
-	for ( a; a<=b; a++);
-	f <<(a*3)<<"\n";
+	while (a<=b){
+	      f<<(a*3)<<"\n";
+	     a++;
+	      
+	}
 	f.close ( ); 
 return 0;
 }
+  
