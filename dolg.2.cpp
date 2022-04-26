@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-int N,i;
+int N;
 float X;
 cout«"Введите длину массива N: "«"\n";
 cin»N;
